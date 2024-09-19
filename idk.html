@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="calorie.js"></script>
+<body>
+    <form >
+    <fieldset>
+        <legend>Calories calculator</legend>
+        Age: <input type="number" placeholder="age 15-80" required id="age">
+        <br>
+        <br>
+        Gender: <input type="radio" name="genre" value="M" checked id="m">Homme 
+                <input type="radio" name="genre" value="F" id="f">Femme
+        <br>
+        <br>
+        Height: <input type="number" placeholder="Cm" required id="H">
+        <br>
+        <br>
+        weight: <input type="number" placeholder="Kg" required id="W">
+        <br>
+        <br>
+        Activity:
+        <select name="Activity" id="act" required>
+            <option value="1" >Moderately active</option>
+            <option value="2">Very active</option>
+            <option value="3">Extra active</option>
+        </select>
+        <br>
+        <br>
+        <input type="button" value="calcule" onclick="calorie()"><input type="text"  id="here" readonly>
+    </fieldset>
+    </form>
+</body>
+</html>
